@@ -3,14 +3,14 @@ puts 'CREATED ADMIN USER: ' << admin.email
 
 # Add an LTI Application
 lti_applications = [{
-  name: "LTI Starter App",
-  description: "LTI Starter App by Atomic Jolt",
+  name: "Lti Outcomes Example",
+  description: "Lti Outcomes Example by Atomic Jolt",
   client_application_name: "app",
   canvas_api_permissions: "LIST_ACCOUNTS", # List Canvas API methods the app is allowed to use. A full list of constants can be found in canvas_urls
 }]
 
 lti_application_instances = [{
-  lti_application: "LTI Starter App",
+  lti_application: "Lti Outcomes Example",
   lti_key: Rails.application.secrets.default_lti_key,
   lti_secret: Rails.application.secrets.default_lti_secret,
   lti_consumer_uri: "https://atomicjolt.instructure.com",
