@@ -44,6 +44,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     resources :jwts
+    resources :outcomes
     resources :courses, only: [] do
       resources :students, only: [:index]
       resources :sections, only: [] do
